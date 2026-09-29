@@ -7,9 +7,9 @@ services:
     environment:
       POSTGRES_DB: ulohaTrixi_db
       POSTGRES_USER: ulohaTrixi_user
-      POSTGRES_PASSWORD: secretpassword
+      POSTGRES_PASSWORD: ${DB_HESLO}
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
 
